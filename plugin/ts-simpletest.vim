@@ -1,7 +1,7 @@
-if exists("g:loaded_tssimpletest") || &cp
+if exists("g:loaded_tsphptest") || &cp
   finish
 endif
-let g:loaded_tssimpletest= 1
+let g:loaded_tsphptest= 1
 
 let s:prj = getcwd()
 
