@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+sed -e 's/FAILURES!!!/\x1b[31m&\x1b[0m/' |
+sed -e 's/^OK$/\x1b[32m&\x1b[0m/' |
+sed -re 's/Bad TestSuite /\x1b[32m&\x1b[0m/' |
+sed -re 's/Passes: [1-9]([0-9]{1,6})?/\x1b[32m&\x1b[0m/' |
+sed -re 's/Failures: [1-9]([0-9]{1,6})?/\x1b[31m&\x1b[0m/'
